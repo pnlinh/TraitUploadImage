@@ -19,7 +19,7 @@ trait FileUploadTrait
     {
         $path = public_path($path.'/');
 
-        if ($file_name != null) {
+        if ($file_name !== null) {
             $file_name = json_decode($file_name);
 
             foreach ($file_name as $file) {
